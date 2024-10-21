@@ -62,13 +62,13 @@ public void  testToStringStartsAndEndsWithNewLine(){
 
     @Test
     public void testToStringHandlesEmptyField() {
-        Job job4 = new Job("", new Employer("City Bank"), new Location("California"), new PositionType("Full Time"), new CoreCompetency("Java"));
+        Job job4 = new Job("", new Employer("City Bank"), new Location("California"), new PositionType("Full-time"), new CoreCompetency("Java"));
         String expectedResult = System.lineSeparator() +
                 "ID: " + job4.getId() + System.lineSeparator() +
                 "Name: Data not available" + System.lineSeparator() +
                 "Employer: City Bank" + System.lineSeparator() +
                 "Location: California" + System.lineSeparator() +
-                "Position Type: Full Time" + System.lineSeparator() +
+                "Position Type: Full-time" + System.lineSeparator() +
                 "Core Competency: Java" + System.lineSeparator();
 
         assertEquals(expectedResult, job4.toString());
